@@ -25,6 +25,8 @@ open class FirebaseImage : FirebaseStandard {
         }
     }
     
+    //Comment
+    
     internal static func getImage(from child: String, memorySize: MemoryAllocationLevel, completion: @escaping (UIImage)->()) {
         getArbitraryDataFromStorage(child: child, maximumMemory: memorySize) { (data: Data?, error: Error?) in
             if error == nil {

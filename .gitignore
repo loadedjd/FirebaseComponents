@@ -2,3 +2,5 @@
 FirebaseComponents\.xcodeproj/project\.pbxproj
 
 FirebaseComponents\.xcodeproj/project\.xcworkspace/contents\.xcworkspacedata
+
+*.xcuserstate
