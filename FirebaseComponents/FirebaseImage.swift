@@ -12,7 +12,7 @@ import FirebaseStorage
 
 
 open class FirebaseImage : FirebaseStandard {
-    internal static func uploadImage(to child: String, image: UIImage, compression: CompressionLevel, completion: ((Error?)->())?) {
+    static func uploadImage(to child: String, image: UIImage, compression: CompressionLevel, completion: ((Error?)->())?) {
         
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpeg"
@@ -27,7 +27,7 @@ open class FirebaseImage : FirebaseStandard {
     
     //Comment
     
-    internal static func getImage(from child: String, memorySize: MemoryAllocationLevel, completion: @escaping (UIImage)->()) {
+    static func getImage(from child: String, memorySize: MemoryAllocationLevel, completion: @escaping (UIImage)->()) {
         getArbitraryDataFromStorage(child: child, maximumMemory: memorySize) { (data: Data?, error: Error?) in
             if error == nil {
                 if let unwrappedData = data {

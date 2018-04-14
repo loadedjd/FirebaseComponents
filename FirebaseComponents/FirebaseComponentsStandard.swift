@@ -12,7 +12,7 @@ import FirebaseStorage
 
 
 
-
+public typealias RealtimeDatabaseData = [String:Any]
 
 public enum CompressionLevel : CGFloat {
     case High = 0.1
